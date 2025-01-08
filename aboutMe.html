@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/bd37bf7780.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Instrument+Serif" rel="stylesheet">
+    <title>About Me</title>
+</head>
+<body>
+  <!-- Top Navigation for Mobile -->
+  <div class="mobile-container">
+    <div class="topnav">
+      <a href="#home" class="active">Portfolio</a>
+      <div id="myLinks">
+        <a href="home.html">Home</a>
+        <a href="aboutMe.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript for Toggle Menu -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <div class="about-me-container">
+  <header class="about-me-page-header">
+    <div class="logo">PORTFOLIO</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="aboutMe.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about-me-page">
+    <div class="image-row">
+      <img src="cert1.png" alt="Certificate 1" class="images">
+      <img src="cert2.png" alt="Certificate 2" class="images">
+      <img src="cert3.png" alt="Certificate 3" class="images">
+      <img src="comptia.jpg" alt="CompTIA" class="images">
+      <img src="itcert.png" alt="Higher Certificate in Information Technology" class="images">
+    </div>
+    <div class="about-me">
+      <h1>About Me</h1>
+      <p>
+        I am a versatile professional with a strong foundation in technology, software development, and user experience design.
+        With hands-on experience as a technician, I have honed my problem-solving skills and technical expertise.
+        As a software developer, I craft efficient and innovative solutions, leveraging my knowledge of modern programming languages and frameworks.
+        My passion for design drives me to create intuitive and aesthetically pleasing interfaces, ensuring seamless user experiences.
+        With a unique blend of technical and creative skills, I strive to bridge the gap between functionality and design to deliver impactful digital solutions.
+      </p>
+    </div>
+  </section>
+  </div>
+    
+</body>
+</html>

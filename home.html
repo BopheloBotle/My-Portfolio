@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/bd37bf7780.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Instrument+Serif" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+ <!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">Portfolio</a>
+    <div id="myLinks">
+      <a href="home.html">Home</a>
+      <a href="aboutMe.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Add the JavaScript for toggling the menu -->
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+
+
+
+
+    <div class="container">
+
+        <header class="header">
+            <div class="logo">PORTFOLIO</div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="aboutMe.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        
+        <main class="main-content">
+            <section class="intro-section">
+                <div class="text-content">
+                    <h2>Hey there its</h2>
+                    <h1>Bophelo Botle</h1>
+                    <h3>And I am a <span id="typing-effect" class="title"></span></h3>
+                    <p>I am a passionate full-stack developer from South Africa specializing in creating intuitive user interfaces and smooth animations.</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/bophelo-botle-makuzeni-67225b244/" target="_blank" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/BopheloBotle" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    
+                    <button class="download-button"><a href="#" class="download-link">Download CV</a></button>
+                </div>
+                <div class="image-container">
+                    <img src="ME.png" alt="Bophelo Botle" class="me">
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>By Bophelo</p>
+        </footer>
+    </div>
+
+    <!-- Typing Effect Script -->
+    <script src="home.js"></script>
+
+    <section class="about-home">
+      <h1 class="tools">Tools</h1>
+      <div class="tools-container">
+    <div class="toolsIcons">
+      <div class="icon-item">
+        <i class="fa-brands fa-java"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-js"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-python"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-react"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-html5"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-css3-alt"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-git-alt"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-gitlab"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-solid fa-terminal"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-solid fa-laptop-code"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-microsoft"></i>
+      </div>
+      <div class="icon-item">
+        <i class="fa-brands fa-bootstrap"></i>
+      </div>
+    </div>
+      
+    
+        <div class="about-me-home">
+            <h1>About Me</h1>
+          <p>
+            I am a versatile professional with a strong foundation in technology, software development, and user experience design.
+            With hands-on experience as a technician, I have honed my problem-solving skills and technical expertise.
+            As a software developer, I craft efficient and innovative solutions, leveraging my knowledge of modern programming languages and frameworks.
+            My passion for design drives me to create intuitive and aesthetically pleasing interfaces, ensuring seamless user experiences.
+            With a unique blend of technical and creative skills, I strive to bridge the gap between functionality and design to deliver impactful digital solutions.
+          </p>
+
+          <button class="seeMore-button"><a href="aboutMe.html" class="seeMore-link">See More</a></button>
+
+        </div>
+      </div>
+    </section>
+     
+
+    
+      
+    <section class="Projects">
+      <h2 class="pro-1">Projects</h2>
+      <div class="project-home">
+          <img src="SoftwareDev.jpg" alt="Software Developer Image" class="image">
+          <div class="overlay">
+              <div class="text">
+                  <i class="fa-solid fa-laptop-code spinning-icon"></i>
+                  <h3>Software Developer</h3>
+                  <p>
+                     I strive to write clean, readable code to create beautiful software.
+                  </p>
+                  <a href="#" class="project-link">
+                      <i class="fa-solid fa-link"></i> 
+                  </a>
+              </div>
+          </div>
+      </div>
+  
+      <div class="project-home">
+          <img src="SoftwareDev.jpg" alt="UX/UI Designer Image" class="image">
+          <div class="overlay">
+              <div class="text">
+                  <i class="fa-solid fa-pencil spinning-icon"></i>
+                  <h3>UX/UI Designer</h3>
+                  <p>
+                      Design isn't just what a product looks like and feels like. 
+                      It encompasses internal functionality and overall user experience across all digital mediums.
+                  </p>
+                  <a href="#" class="project-link">
+                      <i class="fa-solid fa-link"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  
+      <div class="project-home">
+          <img src="SoftwareDev.jpg" alt="Web Development Image" class="image">
+          <div class="overlay">
+              <div class="text">
+                  <i class="fa-solid fa-code spinning-icon"></i>
+                  <h3>Web Development</h3>
+                  <p>
+                      A professional web designer with a passion for creating visually appealing and user-friendly websites.
+                  </p>
+                  <a href="#" class="project-link">
+                      <i class="fa-solid fa-link"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <section class="contact-me">
+    <h2>Contact Me</h2>
+    <p>If you’d like to connect, collaborate, or ask questions, feel free to fill out the form below.</p>
+    <div class="contact-form">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..." required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write something..." style="height:150px" required></textarea>
+            </div>
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- 
+    <section class="contact-me">
+
+      <div class="contact-form">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Country</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="South Africa">South Africa</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+           <button class="form-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+    -->
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/bd37bf7780.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">Portfolio</a>
+    <div id="myLinks">
+      <a href="home.html">Home</a>
+      <a href="aboutMe.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Add the JavaScript for toggling the menu -->
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+
+    <header class="header">
+        <div class="logo">PORTFOLIO</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="project-div">
+        <h2 class="pro-1">Projects</h2>
+  
+    <section class="Projects">
+         <div class="project-home">
+          <img src="SoftwareDev.jpg" alt="Image" class="image">
+          <div class="overlay">
+            <div class="text"> <i class="fa-solid fa-laptop-code"></i>
+              <br>
+              Software Developer 
+              <br>
+              I am passionate about creating innovative and efficient software solutions.
+              <br>
+               <a href=""><i class="fa-solid fa-link"></i></a>
+          </div>
+          </div>
+        </div>
+         
+  
+  
+  
+        <div class="project-home">
+          <img src="SoftwareDev.jpg" alt="Image" class="image">
+          <div class="overlay">
+            <div class="text"> <i class="fa-solid fa-pencil" id="icon"></i>
+              <br>
+              UX/UI Designer 
+              <br>
+              I specialize in creating engaging, intuitive, 
+              and aesthetically pleasing digital experiences that cater to users'
+               needs and enhance their interaction with products.
+               <br>
+               <a href=""><i class="fa-solid fa-link"id="icon"></i></a>
+              </div>
+          </div>
+        </div>
+  
+        <div class="project-home">
+          <img src="SoftwareDev.jpg" alt="Image" class="image">
+          <div class="overlay">
+            <div class="text"> <i class="fa-solid fa-code"id="icon"></i>
+              <br>
+              Web Development 
+              <br>
+              A professional web designer with
+               a passion for creating visually appealing and user-friendly websites.
+               <br>
+               <a href=""><i class="fa-solid fa-link"id="icon"></i></a>
+          </div>
+          </div>
+        </div>
+    </section>
+      </div>
+  
+</body>
+</html>

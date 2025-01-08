@@ -643,6 +643,56 @@ blog {
     box-shadow: 0 4px 6px rgba(248, 245, 245, 0.1);
     font-weight: lighter;
 }
+@media (max-width: 768px) {
+    .blog-header {
+        display: none; /* Hide header on screens 768px or smaller */
+    }
+}
+/* Default behavior: Hide the .mobile-container on larger screens */
+.mobile-container-blog {
+    display: none;
+}
+
+/* Show the .mobile-container only on small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .mobile-container-blog {
+        display: block;
+    }
+
+    .topnav-blog-blog {
+        overflow: hidden;
+        background-color: pink;
+        position: relative;
+        padding: 5px 0;
+    }
+
+    .topnav-blog a {
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 12px;
+        display: block;
+    }
+
+    .topnav-blog a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .topnav-blog a:hover {
+        background-color: pink;
+        color: white;
+    }
+
+    .active {
+        background-color: pink; /* Adjusted for a better visual contrast */
+        color: pink;
+    }
+}
 
 .logo {
     font-size: 1.5rem;

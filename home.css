@@ -513,6 +513,91 @@ footer {
     }
 }
 
+/* project page*/
+.Projects-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.project-home-page {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow:  #ddd;
+    transition: transform 0.3s ease;
+}
+
+.project-home-page:hover {
+    transform: scale(1.05);
+}
+
+.image {
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 15px;
+    text-align: center;
+}
+
+.project-home-page:hover .overlay {
+    opacity: 1;
+}
+
+.text h3 {
+    font-size: 15px;
+    color: #FADADD;
+    margin-bottom: 1px;
+}
+
+.text p {
+    font-size: 12px;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: 0;
+    padding: 0px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .project-home-page {
+        width: 100%;
+        margin: 5px ;
+    }
+
+    .overlay {
+        padding: 5px;
+    }
+
+    .text p {
+        font-size: 10px;
+    }
+}
+
+
+
 /* Contct form */
 .contact-me {
     padding: 20px 10px;
@@ -974,6 +1059,12 @@ blog {
     .images {
       width: 130%; /* Ensure images adjust to grid column size */
       border-radius: 5px; /* Slightly reduce rounded corners */
+    }
+    about-me{
+    text-align: center; /* Center-align text for better readability */
+    font-size: 15px; /* Adjust font size for smaller screens */
+    line-height: 1.5; /* Improve readability with proper line spacing */
+    margin: 10px 0; /* Add spacing around the paragraph */
     }
   }
  .about-me {

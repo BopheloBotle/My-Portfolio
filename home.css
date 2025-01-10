@@ -996,6 +996,7 @@ blog {
 
 
 
+
 /* About me page */
 .about-me-container {
     display: flex;
@@ -1009,7 +1010,7 @@ blog {
     justify-content: space-between;
     align-items: center;
     padding: 25px 50px;
-    margin-bottom: 5px ;
+    margin-bottom: 5px;
     background-color: #333333;
 }
 @media (max-width: 768px) {
@@ -1019,13 +1020,15 @@ blog {
 }
 .about-me-page {
     display: flex;
+    flex-direction: row; /* Default: side-by-side layout */
     align-items: flex-start;
     justify-content: space-between;
     gap: 100px; /* Space between text and images */
     max-width: 1200px; /* Constrain the section's width */
-    margin: 0 auto; /* Centr the content */
+    margin: 0 auto; /* Center the content */
     padding: 20px;
 }
+
 .image-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
@@ -1035,53 +1038,57 @@ blog {
     border: 2px solid #333; /* Border around the image grid */
     padding: 5px;
     transition: transform 0.3s ease; /* Optional: Hover effect */
-  }
-  .image-row img:hover {
+}
+.image-row img:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-  }
-  
-  .images {
+}
+
+.images {
     width: 130%; /* Ensure images fill their grid cell */
     height: auto; /* Maintain aspect ratio */
     border-radius: 7px; /* Optional: Rounded corners */
     box-shadow: 0 4px 8px whitesmoke; /* Optional: Shadow effect */
-    gap: 20px;
-  }
+}
 
-  /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
+    .about-me-page {
+        flex-direction: column; /* Stack content vertically */
+        gap: 20px; /* Adjust spacing for stacked layout */
+    }
+
+    .about-me {
+        order: -1; /* Move text to the top */
+        text-align: center; /* Center-align text for better readability */
+        font-size: 15px; /* Adjust font size for smaller screens */
+        line-height: 1.5; /* Improve readability with proper line spacing */
+        margin: 10px 0; /* Add spacing around the paragraph */
+    }
+
     .image-row {
-      grid-template-columns: 1fr; /* One column layout for smaller screens */
-      gap: 5px; /* Reduce gap for smaller screens */
+        grid-template-columns: 1fr; /* One column layout for smaller screens */
+        gap: 5px; /* Reduce gap for smaller screens */
     }
-  
+
     .images {
-      width: 130%; /* Ensure images adjust to grid column size */
-      border-radius: 5px; /* Slightly reduce rounded corners */
+        width: 100%; /* Ensure images adjust to grid column size */
+        border-radius: 5px; /* Slightly reduce rounded corners */
     }
-    about-me{
-    text-align: center; /* Center-align text for better readability */
-    font-size: 15px; /* Adjust font size for smaller screens */
-    line-height: 1.5; /* Improve readability with proper line spacing */
-    margin: 10px 0; /* Add spacing around the paragraph */
-    }
-  }
- .about-me {
-     flex: 2; /* Allow the text to take up remaining space */
-     max-width: 600px; /* Limit the width of the text */  
- }
- .about-me h1 {
+}
+.about-me {
+    flex: 2; /* Allow the text to take up remaining space */
+    max-width: 600px; /* Limit the width of the text */
+}
+.about-me h1 {
     font-size: 20px;
     margin-bottom: 10px;
-    gap: 20px;
-  }
-  
-  .about-me p {
+}
+.about-me p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 10px;
-  }
-  
+}
+
 
 
 

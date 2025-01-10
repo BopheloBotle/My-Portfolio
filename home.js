@@ -32,3 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+document.querySelector('.form-btn').addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+
+    // Get form data
+    const fname = document.getElementById('fname').value;
+    const lname = document.getElementById('lname').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+
+    // Construct the mailto link
+    const mailtoLink = `mailto:seagabophelo@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${fname}%20${lname}%0AEmail:%20${email}%0AMessage:%20${subject}`;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
+});

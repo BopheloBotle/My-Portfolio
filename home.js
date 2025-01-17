@@ -1,3 +1,13 @@
+document.addEventListener("contextmenu", event => event.preventDefault());
+document.addEventListener("keydown", event => {
+    if (event.ctrlKey && (event.key === "u" || event.key === "s")) {
+        event.preventDefault();
+    }
+});
+
+
+
+
 const roles = ["Software Developer", "UI/UX Designer", "Technician"];
 let roleIndex = 0;
 let charIndex = 0;
@@ -48,3 +58,4 @@ document.querySelector('.form-btn').addEventListener('click', function (event) {
     // Open the mailto link
     window.location.href = mailtoLink;
 });
+
